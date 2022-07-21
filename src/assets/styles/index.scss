@@ -1,30 +1,42 @@
-$blue: darkslateblue;
 $bg-body: antiquewhite;
+
+$purple: #591A5F;
+$pink: #CA6B75;
+$blush: #F2B5A7;
+$yellow: #FEFFDF;
+$blue: #C4E8F0;
+$white: #FFFFFF;
 
 html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Open Sans', sans-serif;
 }
 
-// A general comment that should be
-// stripped out in production
 body {
-  color: $blue;
-  background-color: $bg-body;
+  color: $purple;
+  background-color: $blush;
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-size: 18px;
+}
+
+.wrap {
+  padding: 0 22px;
+  margin: 0 auto;
+  max-width: 1128px;
+  width: calc(100% - 44px);
 }
 
 main {
-  display: flex;
   flex-grow: 1;
   align-items: center;
+  width: 100%;
 
   img {
-    width: 6rem;
+    width: 320px;
   }
 }
 
@@ -33,13 +45,85 @@ img {
   height: auto;
 }
 
-.icon {
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  margin-right: 0.25em;
-  vertical-align: middle;
-  font-size: 1.5em;
-  fill: currentColor;
-  pointer-events: none;
+a {
+  color: $purple;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sub-headline {
+  font-size: 30px;
+}
+
+.button-link {
+  background-color: $blue;
+  border: 3px solid $purple;
+  border-radius: 15px;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header .logo {
+  max-width: 320px;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-headline img {
+  max-width: 700px;
+  width: 100%;
+}
+
+.what {
+  background-color: $yellow;
+}
+
+.who {
+  background-color: $blue;
+}
+
+.bio {
+  background-color: $yellow;
+  border: 3px solid $purple;
+  border-radius: 25px;
+  padding: 44px;
+}
+
+.bio-link {
+  align-items: center;
+  background-color: $yellow;
+  border: 3px solid $purple;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 96px;
+  text-align: center;
+  width: 96px;
+}
+
+.bio-link img {
+  width: 50px;
+}
+
+.who .button-link {
+  background-color: $blush;
+}
+
+.value-card {
+  background-color: $yellow;
+  border-radius: 15px;
+}
+
+.work {
+  background-color: $purple;
+  color: $yellow
 }

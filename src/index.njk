@@ -4,5 +4,63 @@ title: Hello world
 htmlClass: html
 bodyClass: body
 ---
-<h1>Hello world 👋<br/>from “{{ site.name }}”</h1>
-{% image "eleventy_logo.png", "The possum is Eleventy’s mascot" %}
+<section class="hero">
+  <div class="wrap">
+    <h1 class="hero-headline">{% image "hero-header.svg", "Un-Fuck Your Growth" %}</h1>
+    <p class="sub-headline">We’re retention marketing consultants who have a borderline unhealthy obsession with driving LTV for ecommerce businesses.</p>
+    <a href="#work" class="button-link">Work With Us</a>
+  </div>
+</section>
+<section class="what">
+  <div class="wrap">
+    <h2 class="">{% image "what-header.svg", "What We Do" %}</h2>
+    <p class="sub-headline">Leverage our extensive experience across the DTC landscape to grow your business efficiently</p>
+    <ul>
+      <li>Email + SMS Automation</li>
+      <li>Segmentation + Personalization</li>
+      <li>Reporting + Insights</li>
+      <li>First Part Data Capture</li>
+      <li>CX + Chatbot Automation</li>
+      <li>List Growth Tactics</li>
+    </ul>
+    <h3 class="">{% image "how-header.svg", "How We Work" %}</h3>
+    <p class="sub-headline">Leverage our extensive experience across the DTC landscape to grow your business efficiently</p>
+    <ul>
+      <li>Strategy Retainer:</li>
+      <li>Audit + Roadmap:</li>
+      <li>Project Scope:</li>
+    </ul>
+    <a href="#work" class="button-link">Get Started</a>
+  </div>
+</section>
+<section class="who">
+  <div class="wrap">
+    <h2 class="">{% image "who-header.svg", "Who We Are" %}</h2>
+    <p class="sub-headline">‘Resident’ captures the spirit of our intentions as partners. We’ll be as committed to your success as in-house team members.</p>
+    <p class="sub-headline">We’re moving in, we’re just not paying the mortgage.</p>
+    <div class="bio">
+      <div>{% image "mandi.png", "A headshot of Mandi" %}</div>
+      <p><span>Mandi</span> has been leading retention marketing for DTC brands for over a decade. She’s helped ecomm retailers of all sizes, from newly launched startups to enterprise businesses, sustainably scale by driving customer loyalty and increasing LTV.</p>
+      <p>Where most “retention marketers” are really only experienced with email and SMS, Mandi is an expert at driving repeat purchases by evaluating the full funnel of the customer experience. She knows that retention starts at acquisition, making her just as invested in the first purchase as the second and the third.</p>
+      <p>Mandi is a firm believer that retention is everyone’s job, and takes a holistic view of a brand’s cross-channel presence when evaluating opportunities to increase repeat purchase rate.</p>
+      <a class="bio-link" href="#">
+        <div>{% image "twitter.svg", "Twitter bird icon" %}</div>
+        <span>Follow Mandi</span>
+      </a>
+    </div>
+    <a href="#work" class="button-link">Get In Touch</a>
+    <h3 class="">{% image "values-header.svg", "Our Values" %}</h3>
+    <ul>
+      <li class="value-card">
+        <span class="">Integrity</span>
+        <p>Great brands aren't built on marketing. They're the result of quality product and an honest, empathetic customer experience. We’re not here to make sketchy claims and see what sticks. You bring the product, we'll help elevate the experience.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="work" class="work">
+  <div class="wrap">
+
+  </div>
+</section>
+
