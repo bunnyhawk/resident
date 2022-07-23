@@ -6,24 +6,51 @@ bodyClass: body
 ---
 <section class="hero">
   <div class="wrap">
-    <h1 class="hero-headline">{% image "hero-header.svg", "Un-Fuck Your Growth" %}</h1>
+    <h1 class="hero-headline">
+      {% include "./assets/images/hero-header.svg" %}
+      <span class="sr-only">Un-Fuck Your Growth</span>
+    </h1>
     <p class="sub-headline">We’re retention marketing consultants who have a borderline unhealthy obsession with driving LTV for ecommerce businesses.</p>
     <a href="#work" class="button-link">Work With Us</a>
   </div>
 </section>
-<section class="what">
+<section id="what" class="what">
   <div class="wrap">
-    <h2 class="">{% image "what-header.svg", "What We Do" %}</h2>
+    <h2 class="headline-image">
+      {% include "./assets/images/what-header.svg" %}
+      <span class="sr-only">What We Do</span>
+    </h2>
     <p class="sub-headline">Leverage our extensive experience across the DTC landscape to grow your business efficiently</p>
-    <ul>
-      <li>Email + SMS Automation</li>
-      <li>Segmentation + Personalization</li>
-      <li>Reporting + Insights</li>
-      <li>First Part Data Capture</li>
-      <li>CX + Chatbot Automation</li>
-      <li>List Growth Tactics</li>
+    <ul class="services">
+      <li class="service">
+        <span class="service-icon">{% include "./assets/images/email-sms.svg" %}</span>
+        <span>Email + SMS Automation</span>
+      </li>
+      <li class="service">
+        <span class="service-icon">{% include "./assets/images/segmentation.svg" %}</span>
+        <span>Segmentation + Personalization</span>
+      </li>
+      <li class="service">
+        <span class="service-icon">{% include "./assets/images/reporting-insights.svg" %}</span>
+        <span>Reporting + Insights</span>
+      </li>
+      <li class="service">
+        <span class="service-icon">{% include "./assets/images/data-capture.svg" %}</span>
+        <span>First Part Data Capture</span>
+      </li>
+      <li class="service">
+        <span class="service-icon">{% include "./assets/images/cx-chatbot.svg" %}</span>
+        <span>CX + Chatbot Automation</span>
+      </li>
+      <li class="service">
+        <span class="service-icon">{% include "./assets/images/list-growth.svg" %}</span>
+        <span>List Growth Tactics</span>
+      </li>
     </ul>
-    <h3 class="">{% image "how-header.svg", "How We Work" %}</h3>
+    <h3 class="headline-image">
+      {% include "./assets/images/how-header.svg" %}
+      <span class="sr-only">How We Work</span>
+    </h3>
     <p class="sub-headline">Leverage our extensive experience across the DTC landscape to grow your business efficiently</p>
     <ul>
       <li>Strategy Retainer:</li>
@@ -33,34 +60,82 @@ bodyClass: body
     <a href="#work" class="button-link">Get Started</a>
   </div>
 </section>
-<section class="who">
+<section id="who" class="who">
   <div class="wrap">
-    <h2 class="">{% image "who-header.svg", "Who We Are" %}</h2>
+    <h2 class="headline-image">
+      {% include "./assets/images/who-header.svg" %}
+      <span class="sr-only">Who We Are</span>
+    </h2>
     <p class="sub-headline">‘Resident’ captures the spirit of our intentions as partners. We’ll be as committed to your success as in-house team members.</p>
     <p class="sub-headline">We’re moving in, we’re just not paying the mortgage.</p>
     <div class="bio">
-      <div>{% image "mandi.png", "A headshot of Mandi" %}</div>
+      <div class="bio-pic">{% image "mandi.png", "A headshot of Mandi" %}</div>
       <p><span>Mandi</span> has been leading retention marketing for DTC brands for over a decade. She’s helped ecomm retailers of all sizes, from newly launched startups to enterprise businesses, sustainably scale by driving customer loyalty and increasing LTV.</p>
       <p>Where most “retention marketers” are really only experienced with email and SMS, Mandi is an expert at driving repeat purchases by evaluating the full funnel of the customer experience. She knows that retention starts at acquisition, making her just as invested in the first purchase as the second and the third.</p>
       <p>Mandi is a firm believer that retention is everyone’s job, and takes a holistic view of a brand’s cross-channel presence when evaluating opportunities to increase repeat purchase rate.</p>
       <a class="bio-link" href="#">
-        <div>{% image "twitter.svg", "Twitter bird icon" %}</div>
-        <span>Follow Mandi</span>
+        <div>{% icon "twitter" %}</div>
+        <span>Follow<br />Mandi</span>
       </a>
     </div>
     <a href="#work" class="button-link">Get In Touch</a>
-    <h3 class="">{% image "values-header.svg", "Our Values" %}</h3>
-    <ul>
-      <li class="value-card">
-        <span class="">Integrity</span>
-        <p>Great brands aren't built on marketing. They're the result of quality product and an honest, empathetic customer experience. We’re not here to make sketchy claims and see what sticks. You bring the product, we'll help elevate the experience.</p>
-      </li>
-    </ul>
+    <div class="values">
+      <h3 class="headline-image">
+        {% include "./assets/images/values-header.svg" %}
+        <span class="sr-only">Our Values</span>
+      </h3>
+      <ul class="values-list">
+        <li class="value-card">
+          <span class="values-icon">{% include "./assets/images/i.svg" %}</span>
+          <div>
+            <span class="">Integrity</span>
+            <p>Great brands aren't built on marketing. They're the result of quality product and an honest, empathetic customer experience. We’re not here to make sketchy claims and see what sticks. You bring the product, we'll help elevate the experience.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 <section id="work" class="work">
   <div class="wrap">
-
+    <h2 class="headline-image">
+      {% include "./assets/images/work-header.svg" %}
+      <span class="sr-only">Work With Us</span>
+    </h2>
+    <p class="sub-headline">Drop us a line and we'll reach out to connect</p>
+    <form name="contact" netlify>
+      <p>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" />
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Company</span>
+          <input type="text" name="company" />
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Job Title</span>
+          <input type="text" name="title" />
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Tell us about your needs</span>
+          <textarea id="needs" name="needs"></textarea>
+        </label>
+      </p>
+      <button type="submit">Send</button>
+    </form>
   </div>
 </section>
 

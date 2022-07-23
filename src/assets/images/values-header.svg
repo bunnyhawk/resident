@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.99 58.46"><defs><style>.cls-1{font-size:48px;fill:#591a5f;font-family:Lust-Regular, Lust;}.cls-2{letter-spacing:-0.14em;}.cls-3{letter-spacing:-0.02em;}.cls-4{letter-spacing:0.02em;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><text class="cls-1" transform="translate(0 40.8)">Our <tspan class="cls-2" x="110.97" y="0">V</tspan><tspan class="cls-3" x="146.11" y="0">a</tspan><tspan x="175.29" y="0">lu</tspan><tspan class="cls-4" x="226.03" y="0">e</tspan><tspan x="254.97" y="0">s</tspan></text></g></g></svg>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 281 41.8" style="enable-background:new 0 0 281 41.8" xml:space="preserve">
+  <style>
+    .values0{fill:#591a5f}.values1{font-family:&apos;Lust-Regular&apos;}.values2{font-size:48px}
+  </style>
+  <g id="Layer_2_00000017474422664959340130000015451234485921170345_">
+    <g id="Layer_2-2">
+      <text transform="translate(0 40.8)" class="values0 values1 values2">Our </text>
+      <text transform="translate(110.97 40.8)" class="values0 values1 values2" style="letter-spacing:-6">V</text>
+      <text transform="translate(146.11 40.8)" class="values0 values1 values2">a</text>
+      <text transform="translate(175.29 40.8)" class="values0 values1 values2">lu</text>
+      <text transform="translate(226.03 40.8)" class="values0 values1 values2">e</text>
+      <text transform="translate(254.97 40.8)" class="values0 values1 values2">s</text>
+    </g>
+  </g>
+</svg>

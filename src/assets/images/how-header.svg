@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362.69 58.46"><defs><style>.cls-1{font-size:48px;fill:#591a5f;font-family:Lust-Regular, Lust;}.cls-2{letter-spacing:-0.03em;}.cls-3{letter-spacing:-0.08em;}.cls-4{letter-spacing:-0.16em;}.cls-5{letter-spacing:0em;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_3" data-name="Layer 3"><text class="cls-1" transform="translate(0 40.8)"><tspan class="cls-2">H</tspan><tspan class="cls-3" x="39.65" y="0">o</tspan><tspan x="66.72" y="0">w </tspan><tspan class="cls-4" x="126.86" y="0">W</tspan><tspan x="180" y="0">e </tspan><tspan class="cls-4" x="217.73" y="0">W</tspan><tspan x="270.86" y="0">o</tspan><tspan class="cls-2" x="301.77" y="0">r</tspan><tspan class="cls-5" x="328.75" y="0">k</tspan></text></g></g></svg>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 362.7 40.2" style="enable-background:new 0 0 362.7 40.2" xml:space="preserve">
+  <style>
+    .how0{fill:#591a5f}.how1{font-family:&apos;Lust-Regular&apos;}.how2{font-size:48px}.how3{letter-spacing:-1}.how5{letter-spacing:-7}
+  </style>
+  <g id="Layer_2_00000140712727948064766550000014695316525823027347_">
+    <g id="Layer_3">
+      <text transform="translate(0 39.205)" class="how0 how1 how2 how3">H</text>
+      <text transform="translate(39.65 39.205)" class="how0 how1 how2" style="letter-spacing:-3">o</text>
+      <text transform="translate(66.72 39.205)" class="how0 how1 how2">w </text>
+      <text transform="translate(126.86 39.205)" class="how0 how1 how2 how5">W</text>
+      <text transform="translate(180 39.205)" class="how0 how1 how2">e </text>
+      <text transform="translate(217.73 39.205)" class="how0 how1 how2 how5">W</text>
+      <text transform="translate(270.86 39.205)" class="how0 how1 how2">o</text>
+      <text transform="translate(301.77 39.205)" class="how0 how1 how2 how3">r</text>
+      <text transform="translate(328.75 39.205)" class="how0 how1 how2">k</text>
+    </g>
+  </g>
+</svg>
