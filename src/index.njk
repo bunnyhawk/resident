@@ -1,16 +1,17 @@
 ---
 layout: default
-title: Hello world
+title: Resident Consulting
 htmlClass: html
 bodyClass: body
 ---
 <section class="hero">
   <div class="wrap">
     <h1 class="hero-headline">
-      {% include "./assets/images/hero-header.svg" %}
+      <span class="tag mobile">{% include "./assets/images/hero-header-mobile.svg" %}</span>
+      <span class="tag">{% include "./assets/images/hero-header.svg" %}</span>
       <span class="sr-only">Un-Fuck Your Growth</span>
     </h1>
-    <p class="sub-headline">We’re retention marketing consultants who have a borderline unhealthy obsession with driving LTV for ecommerce businesses.</p>
+    <p class="sub-headline">We're retention marketing consultants who have a borderline unhealthy obsession with driving LTV for ecommerce businesses.</p>
     <a href="#work" class="button-link">Work With Us</a>
   </div>
 </section>
@@ -52,10 +53,23 @@ bodyClass: body
       <span class="sr-only">How We Work</span>
     </h3>
     <p class="sub-headline">Leverage our extensive experience across the DTC landscape to grow your business efficiently</p>
-    <ul>
-      <li>Strategy Retainer:</li>
-      <li>Audit + Roadmap:</li>
-      <li>Project Scope:</li>
+    <ul class="work-list">
+      <li>
+        <span>Audit + Roadmap:</span>
+        <p>A super deep dive into your current retention program to identify opportunities for growth. We'll deliver a meaty report complete with a detailed roadmap to enhance and optimize your retention channels.</p>
+        <span class="price">$Price: 5,000/mo</span>
+      </li>
+      <li>
+        <span>Strategy Retainer:</span>
+        <p>An ongoing partnership to give your team the guidance and support they need to execute best in class retention marketing. We'll identify initiatives most likely to drive up CLTV and provide the strategy for your team to execute. Need help with creative or execution? We've partnered with the best in the biz to take the work off your plate.</p>
+        <span class="price">Price: $7,500</span>
+      </li>
+      
+      <li>
+        <span>Project Scope:</span>
+        <p>Have a specific project you need help with? Whether you're setting up a new quiz, locking down your foundational email flows, or ready to get serious about SMS, we've got the expertise to launch high-performance initiatives your team may not have the experience or resources to handle.</p>
+        <span class="price">Price: Varies by project</span>
+      </li>
     </ul>
     <a href="#work" class="button-link">Get Started</a>
   </div>
@@ -66,13 +80,13 @@ bodyClass: body
       {% include "./assets/images/who-header.svg" %}
       <span class="sr-only">Who We Are</span>
     </h2>
-    <p class="sub-headline">‘Resident’ captures the spirit of our intentions as partners. We’ll be as committed to your success as in-house team members.</p>
-    <p class="sub-headline">We’re moving in, we’re just not paying the mortgage.</p>
+    <p class="sub-headline">‘Resident' captures the spirit of our intentions as partners. We'll be as committed to your success as in-house team members.</p>
+    <p class="sub-headline">We're moving in, we're just not paying the mortgage.</p>
     <div class="bio">
       <div class="bio-pic">{% image "mandi.png", "A headshot of Mandi" %}</div>
-      <p><span>Mandi</span> has been leading retention marketing for DTC brands for over a decade. She’s helped ecomm retailers of all sizes, from newly launched startups to enterprise businesses, sustainably scale by driving customer loyalty and increasing LTV.</p>
+      <p><span>Mandi</span> has been leading retention marketing for DTC brands for over a decade. She's helped ecomm retailers of all sizes, from newly launched startups to enterprise businesses, sustainably scale by driving customer loyalty and increasing LTV.</p>
       <p>Where most “retention marketers” are really only experienced with email and SMS, Mandi is an expert at driving repeat purchases by evaluating the full funnel of the customer experience. She knows that retention starts at acquisition, making her just as invested in the first purchase as the second and the third.</p>
-      <p>Mandi is a firm believer that retention is everyone’s job, and takes a holistic view of a brand’s cross-channel presence when evaluating opportunities to increase repeat purchase rate.</p>
+      <p>Mandi is a firm believer that retention is everyone's job, and takes a holistic view of a brand's cross-channel presence when evaluating opportunities to increase repeat purchase rate.</p>
       <a class="bio-link" href="#">
         <div>{% icon "twitter" %}</div>
         <span>Follow<br />Mandi</span>
@@ -84,15 +98,55 @@ bodyClass: body
         {% include "./assets/images/values-header.svg" %}
         <span class="sr-only">Our Values</span>
       </h3>
-      <ul class="values-list">
-        <li class="value-card">
-          <span class="values-icon">{% include "./assets/images/i.svg" %}</span>
-          <div>
-            <span class="">Integrity</span>
-            <p>Great brands aren't built on marketing. They're the result of quality product and an honest, empathetic customer experience. We’re not here to make sketchy claims and see what sticks. You bring the product, we'll help elevate the experience.</p>
-          </div>
-        </li>
-      </ul>
+      <div class="glide">
+        <div data-glide-el="track" class="glide__track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <span class="values-icon">{% include "./assets/images/i.svg" %}</span>
+              <div class="value-card">
+                <span class="value-title">Integrity</span>
+                <p>Great brands aren't built on marketing. They're the result of quality product and an honest, empathetic customer experience. We're not here to make sketchy claims and see what sticks. You bring the product, we'll help elevate the experience.</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <span class="values-icon">{% include "./assets/images/a.svg" %}</span>
+              <div class="value-card">
+                <span class="value-title">Agility</span>
+                <p>Digital marketing is always evolving. We embrace a growth mindset and get excited at the chance to continuously learn, grow, and adapt to the shifting environment in which we work. We've learned from our mistakes along the way and you'll reap the benefits.</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <span class="values-icon">{% include "./assets/images/c.svg" %}</span>
+              <div class="value-card">
+                <span class="value-title">Candor</span>
+                <p>We're known to tell it like it is. If performance is falling short, we won't dance around it. If your goals are unrealistic, we'll give it to you straight. But this whole “honesty is the best policy” thing goes both ways. If at any point we're not meeting your expectations, we want to be the first to know.</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <span class="values-icon">{% include "./assets/images/l.svg" %}</span>
+              <div class="value-card">
+                <span class="value-title">Levity</span>
+                <p>We spend a third of our lives at work. A THIRD! Maybe it shouldn't be miserable? We're working on making your passion reach peak potential - that's awesome. Let's have some fun. </p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <span class="values-icon">{% include "./assets/images/b.svg" %}</span>
+              <div class="value-card">
+                <span class="value-title">Balance</span>
+                <p>We love what we do, but we love our families more. Success and sacrifice don't have to go hand in hand. We'll work together to achieve great things without burning out.</p>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0" aria-label="go to the first slide"></button>
+          <button class="glide__bullet" data-glide-dir="=1" aria-label="go to the second slide"></button>
+          <button class="glide__bullet" data-glide-dir="=2" aria-label="go to the third slide"></button>
+          <button class="glide__bullet" data-glide-dir="=3" aria-label="go to the fourth slide"></button>
+          <button class="glide__bullet" data-glide-dir="=4" aria-label="go to the fifth slide"></button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -103,39 +157,10 @@ bodyClass: body
       <span class="sr-only">Work With Us</span>
     </h2>
     <p class="sub-headline">Drop us a line and we'll reach out to connect</p>
-    <form name="contact" netlify>
-      <p>
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" />
-        </label>
-      </p>
-      <p>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" />
-        </label>
-      </p>
-      <p>
-        <label>
-          <span>Company</span>
-          <input type="text" name="company" />
-        </label>
-      </p>
-      <p>
-        <label>
-          <span>Job Title</span>
-          <input type="text" name="title" />
-        </label>
-      </p>
-      <p>
-        <label>
-          <span>Tell us about your needs</span>
-          <textarea id="needs" name="needs"></textarea>
-        </label>
-      </p>
-      <button type="submit">Send</button>
-    </form>
+    <a href="mailto:residentconsultingllc@gmail.com" class="email-link">
+      {% include "./assets/images/email.svg" %}
+      <span>Send us<br />an email</span>
+    </a>
   </div>
 </section>
 
