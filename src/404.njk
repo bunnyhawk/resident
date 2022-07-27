@@ -1,14 +1,28 @@
 ---
-layout: default
+layout: default-404
 permalink: 404.html
 title: 404 - Page not found
 description: Page not found
 eleventyExcludeFromCollections: true
 ---
-<div>
-  {% markdown %}
-  # Page not found
-  Go [home](/){style="font-weight: bold"}
-  {% endmarkdown %}
-</div>
-{% image "resident.png", "The possum is Eleventy’s mascot" %}
+<section class="hero not-found">
+  <div class="wrap">
+    <h1 class="hero-headline">
+      Page not found
+    </h1>
+    <a href="/">Go Home</a>
+  </div>
+</section>
+<section class="work">
+  <div id="work" class="wrap">
+    <h2 class="headline-image">
+      {% include "./assets/images/work-header.svg" %}
+      <span class="sr-only">Work With Us</span>
+    </h2>
+    <p class="sub-headline">Drop us a line and we'll reach out to connect</p>
+    <a href="mailto:mandi@residentconsulting.com" class="email-link">
+      {% include "./assets/images/email.svg" %}
+      <span>Send us<br />an email</span>
+    </a>
+  </div>
+</section>

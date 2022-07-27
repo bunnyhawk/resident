@@ -139,6 +139,10 @@ a {
   background-color: $blush;
   text-align: center;
 
+  &.not-found {
+    min-height: 300px;
+  }
+
   .hero .sub-headline {
     max-width: none;
   }
